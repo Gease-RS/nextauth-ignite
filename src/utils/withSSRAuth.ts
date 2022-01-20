@@ -32,6 +32,8 @@ export function withSSRAuth<P>(
       };
     }
 
+    const user = decode(token);
+
     if (options) {
       const user = decode<{ permissions: string[]; roles: string[] }>(token);
       const { permissions, roles } = options;

@@ -20,6 +20,6 @@ export const getServerSideProps = withSSRAuth(
   },
   {
     permissions: ["metrics.list"],
-    roles: ["administrador"],
+    roles: ["administrator"],
   }
 );
